@@ -1,0 +1,15 @@
+/* 1. Import Google Fonts */
+/* Ensure Playfair Display is imported here */
+/* index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Add custom base styles using @apply with your theme */
+@layer base {
+  body {
+    @apply bg-background text-primary-text font-lora;
+  }
+}

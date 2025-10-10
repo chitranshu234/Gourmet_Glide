@@ -1,0 +1,97 @@
+1- props, proptypes and default props
+2-conditional rendering
+3- list rendering using map function
+4- click events
+5- react hook (prefix- use..)  
+6- onChange
+7- two way binding------------------------------------------------
+  
+import React, { useState } from "react";
+
+function App() {
+  const [userName, setuserName] = useState("");
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(userName);
+    setuserName("");
+  };
+  return (
+    <>
+      <h1>Registration Form</h1>
+      <form
+        onSubmit={(e) => {
+          submitHandler(e);
+        }}
+      >
+        <input
+          value={userName}
+          onChange={(e) => {
+            setuserName(e.target.value);
+          }}
+          type="text"
+          placeholder="Enter ur name"
+        />
+        <br />
+        <button>Submit</button>
+      </form>
+    </>
+  );
+}
+
+export default App;
+
+--------------------------------------------------------------------
+
+8-api calling with axios----------------------------------------------
+9- react router dom -------------------------------------------------
+  -in app.jsx-------------------------
+ 
+ import React from 'react';
+import axios from 'axios';
+import {Route , Routes } from 'react-router-dom'
+import About from './pages/About';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Header2 from './components/Header2'
+
+
+
+function App() {
+  return (
+    <>
+    <Header2/>
+    <Routes>
+      <Route path ='/' element ={<Home/>}/>
+      <Route path ='/about' element ={<About/>}/>
+      <Route path ='/contact' element ={<Contact/>}/>
+    </Routes>
+    </>
+  );
+}
+
+export default App;
+ 
+ -in header(for not reloading)-----------
+
+ import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Header() {
+  return (
+    <nav className="bg-blue-600 p-4 shadow-md">
+      <div className="container mx-auto flex justify-between items-center text-white">
+        <h1 className="text-xl font-bold">Chitranshu's Site</h1>
+        <div className="space-x-4">
+          <Link to="/" className="hover:text-yellow-300 transition">Home</Link>
+          <Link to="/about" className="hover:text-yellow-300 transition">About</Link>
+          <Link to="/contact" className="hover:text-yellow-300 transition">Contact</Link>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default Header;
+-------------------------------------------------------------------------------------------------------------------------------
+
+10-context api (cenntralizing the data)
