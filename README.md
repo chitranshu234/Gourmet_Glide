@@ -62,7 +62,7 @@ You need to have **Node.js** (version 14 or later) and **npm** (or yarn) install
 
 4.  **Run the application:**
     ```bash
-    npm start
+    npm run dev
     ```
     The application will open in your default browser at `http://localhost:3000`.
 
