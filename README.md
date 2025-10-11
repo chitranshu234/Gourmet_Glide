@@ -2,8 +2,6 @@
 
 **Gourmet Glide** is a sleek and modern web application for discovering, viewing, and saving your favorite recipes from around the world. Built with React and heavily featuring **Framer Motion** for rich, fluid animations, this app provides an engaging and delightful user experience. It connects to the free [TheMealDB API](https://www.themealdb.com/api.php) to fetch a vast collection of culinary delights.
 
-
-
 ---
 
 ## ✨ Key Features
@@ -29,6 +27,14 @@ This project is built using a modern frontend stack:
 * **Tailwind CSS:** A utility-first CSS framework for rapid and responsive UI development.
 * **Axios:** A promise-based HTTP client for making API requests to TheMealDB.
 * **Local Storage:** For persisting user's favorite recipes directly in the browser.
+
+---
+
+## 🚀 Live Preview
+
+You can explore a live version of the application deployed here:
+
+**[Gourmet Glide](https://gourmetglide.vercel.app/)**
 
 ---
 
@@ -90,4 +96,3 @@ Contributions are welcome! If you have suggestions for improvements, please fork
 5.  Open a Pull Request
 
 ---
-
